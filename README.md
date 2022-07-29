@@ -14,6 +14,8 @@ In your workspace directory, create a file named `executor.json` with the follow
 
 And replace `...` with the command you with to run. For example, `cargo run`
 
+To run the command, use the command palette (Ctrl + Shift + P) and choose "Executor: Execute command". It's recommended to bind this to a keyboard shortcut for easier use.
+
 ## Development
 
 `pnpm watch`
