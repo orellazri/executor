@@ -13,3 +13,9 @@ In your workspace directory, create a file named `executor.json` with the follow
 ```
 
 And replace `...` with the command you with to run. For example, `cargo run`
+
+## Development
+
+`pnpm watch`
+
+Run and debug in VSCode
