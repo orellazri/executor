@@ -12,9 +12,19 @@ In your workspace directory, create a file named `executor.json` with the follow
 }
 ```
 
-And replace `...` with the command you with to run. For example, `cargo run`
+or for multiple commands:
 
-To run the command, use the command palette (Ctrl + Shift + P) and choose "Executor: Execute command". It's recommended to bind this to a keyboard shortcut for easier use.
+```
+{
+  "command": ["...", "..."]
+}
+```
+
+And replace `...` with the command/s you with to run. For example, `cargo run`
+
+To run the commands, use the command palette (Ctrl + Shift + P) and choose "Executor: Execute command". It's recommended to bind this to a keyboard shortcut for easier use.
+
+When you specify a single command in `executor.json`, that command will instantly run. Otherwise, you will be prompted to choose a command from the commands you specified.
 
 ## Development
 
