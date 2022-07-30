@@ -10,11 +10,11 @@ export function activate(context: vscode.ExtensionContext) {
   let terminal: vscode.Terminal | undefined;
 
   let disposable = vscode.commands.registerCommand("executor.executeCommand", async () => {
-    if (!vscode.workspace.workspaceFolders) {
-      return;
-    }
-
     try {
+      if (!vscode.workspace.workspaceFolders) {
+        throw new Error("No workspace found");
+      }
+
       // read config json file
       let configPath = path.join(vscode.workspace.workspaceFolders[0].uri.fsPath, "executor.json");
       let doc = await vscode.workspace.openTextDocument(configPath);
