@@ -6,6 +6,11 @@
   "icon": "icon.png",
   "author": "Orel Lazri",
   "license": "MIT",
+  "publisher": "OrelLazri",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/orellazri/executor"
+  },
   "keywords": [
     "commands",
     "executer",

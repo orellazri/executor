@@ -28,6 +28,6 @@ When you specify a single command in `executor.json`, that command will instantl
 
 ## Development
 
-`pnpm watch`
+`yarn watch`
 
 Run and debug in VSCode
