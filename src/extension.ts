@@ -37,6 +37,10 @@ export function activate(context: vscode.ExtensionContext) {
         command = quickPickResult || "";
       }
 
+      if (command === "") {
+        return;
+      }
+
       // close terminal if exists, create new one and execute command
       if (terminal) {
         terminal.dispose();
