@@ -49,6 +49,9 @@ export function activate(context: vscode.ExtensionContext) {
       terminal.show();
       terminal.sendText(command);
     } catch (e: any) {
+      if (e.message.includes("nonexistent file")) {
+        e.message = 'Config file "executor.json" not found';
+      }
       vscode.window.showInformationMessage("Executor error: " + e.message);
     }
   });
