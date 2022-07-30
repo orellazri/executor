@@ -16,7 +16,7 @@ or for multiple commands:
 
 ```
 {
-  "command": ["...", "..."]
+  "commands": ["...", "..."]
 }
 ```
 
