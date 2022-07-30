@@ -2,7 +2,7 @@
   "name": "executor",
   "displayName": "Executor",
   "description": "Execute custom commands",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "icon": "icon.png",
   "author": "Orel Lazri",
   "license": "MIT",
